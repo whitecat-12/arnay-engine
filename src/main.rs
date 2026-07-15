@@ -20,11 +20,11 @@ use tracing_subscriber;
 
 fn main() {
     tracing_subscriber::fmt::init();
-    info!("Starting Godot-RS Editor with Vulkan");
+    info!("Arnay Engine Editor with Vulkan");
 
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new()
-        .with_title("Godot-RS Editor + AI NPC (Vulkan)")
+        .with_title("Arnay Engine + AI NPC (Vulkan)")
         .with_inner_size(PhysicalSize::new(1280, 720))
         .with_resizable(true)
         .build(&event_loop)
