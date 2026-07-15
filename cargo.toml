@@ -1,0 +1,28 @@
+// Cargo.toml
+[package]
+name = "arnay-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ash = "0.37"
+ash-window = "0.12"
+winit = "0.28"
+nalgebra = "0.32"
+rayon = "1.7"
+rand = "0.8"
+image = "0.24"
+gltf = "1.0"
+png = "0.17"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bytemuck = "1.13"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+parking_lot = "0.12"
+slotmap = "1.0"
+smallvec = "1.10"
+
+[features]
+default = ["vulkan"]
+vulkan = []
